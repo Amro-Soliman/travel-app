@@ -13,8 +13,14 @@ class CreateInfosTripsTable extends Migration
      */
     public function up()
     {
-        Schema::create('tripInformations', function (Blueprint $table) {
+        Schema::create('tripsInformations', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('trip_id');
+            $table->timestamps('info_time');
+            $table->longText('info_text');
+
+
+
             $table->timestamps();
         });
     }

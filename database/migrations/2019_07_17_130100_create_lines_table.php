@@ -15,6 +15,14 @@ class CreateLinesTable extends Migration
     {
         Schema::create('lines', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('line_name');
+            $table->integer('operator_id');
+            $table->integer('departure_station');
+            $table->integer('arrival_station');
+            $table->longText('description');
+
+
+
             $table->timestamps();
         });
     }

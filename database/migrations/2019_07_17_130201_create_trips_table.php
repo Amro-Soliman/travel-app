@@ -15,6 +15,8 @@ class CreateTripsTable extends Migration
     {
         Schema::create('trips', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->time('departure_time');
+            $table->time('arrival_time');
             $table->timestamps();
         });
     }
