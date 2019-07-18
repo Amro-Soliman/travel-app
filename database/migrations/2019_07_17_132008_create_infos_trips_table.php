@@ -16,7 +16,7 @@ class CreateInfosTripsTable extends Migration
         Schema::create('tripsInformations', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('trip_id');
-            $table->timestamps('info_time');
+            $table->timestamp('info_time');
             $table->longText('info_text');
 
 

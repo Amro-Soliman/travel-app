@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatTicketsTable extends Migration
+class CreateTicketsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -21,7 +21,7 @@ class CreatTicketsTable extends Migration
             $table->integer('schedule_departure_station_id');
             $table->integer('schedule_arrival_station_id');
             $table->decimal('price', 8, 2);
-            $table->timestamps('sales_time');
+            $table->timestamp('sales_time');
 
 
 
