@@ -17,7 +17,7 @@ class CreateLocationsTable extends Migration
             $table->bigIncrements('id');
             $table->string('location_name');
             $table->string('postal_code');
-            $table->integer('country_id');
+            $table->integer('city_id');
             $table->timestamps();
         });
     }

@@ -15,6 +15,16 @@ class CreatTicketsTable extends Migration
     {
         Schema::create('tickets', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->integer('user_id');
+            $table->integer('vehicle_id');
+            $table->date('journey_date');
+            $table->integer('schedule_departure_station_id');
+            $table->integer('schedule_arrival_station_id');
+            $table->decimal('price', 8, 2);
+            $table->timestamps('sales_time');
+
+
+
             $table->timestamps();
         });
     }
