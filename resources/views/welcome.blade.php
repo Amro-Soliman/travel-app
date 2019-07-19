@@ -83,6 +83,16 @@
                 <div class="title m-b-md">
                     Laravel
                 </div>
+                <div>
+                @foreach($cities as $city)
+    
+    
+                City Id : {{$city->id}} <br>
+                City Name: {{$city->city_name}}<br>
+
+                @endforeach
+
+                </div>
 
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
