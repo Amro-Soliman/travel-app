@@ -16,7 +16,7 @@ class JourneyController extends Controller
     {
         //
         $cities = City::all();
-        return  view('welcome')->with('cities', $cities);
+        return  view('index')->with('cities', $cities);
     }
 
     /**
