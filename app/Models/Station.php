@@ -11,4 +11,8 @@ class Station extends Model
     {
         return $this->hasMany('App\Models\Plan');
     }
+    public function lines()
+    {
+        return $this->hasMany('App\Models\Line');
+    }
 }

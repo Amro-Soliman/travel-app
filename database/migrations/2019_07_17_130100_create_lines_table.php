@@ -17,8 +17,8 @@ class CreateLinesTable extends Migration
             $table->bigIncrements('id');
             $table->string('line_name');
             $table->integer('operator_id');
-            $table->integer('departure_station');
-            $table->integer('arrival_station');
+            $table->integer('departure_station')->foreign('departure_station_fk')->references('station_name')->on('stations');
+            $table->integer('arrival_station')->foreign('arrival_station_fk')->references('station_name')->on('stations');
             $table->longText('description');
 
 
